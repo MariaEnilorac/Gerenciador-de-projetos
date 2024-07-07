@@ -1,4 +1,4 @@
-import styles from './ProjectForm.module.css';
+import styles from './ProjectsCards.module.css';
 import { BsPencil, BsFillTrashFill } from 'react-icons/bs'; // Correção na capitalização
 import { Link } from 'react-router-dom';
 
