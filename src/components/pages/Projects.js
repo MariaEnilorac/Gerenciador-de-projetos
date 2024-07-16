@@ -9,8 +9,8 @@ import ProjectsCards from "../projects/ProjectsCards";
 
 function Projects() {
     const [projects, setProjects] = useState([]);
-    const [removeLoading, setRemoveLoading] = useState(false)
-    const [projectMessage, setProjectMessage] = useState('')
+    const [removeLoading, setRemoveLoading] = useState(false);
+    const [projectMessage, setProjectMessage] = useState('');
 
     const location = useLocation();
     let message = '';
@@ -19,7 +19,7 @@ function Projects() {
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/projects', { // Corrigido aqui
+        fetch('http://localhost:5000/projects', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -29,24 +29,24 @@ function Projects() {
         .then(data => {
             console.log(data);
             setProjects(data);
-            setRemoveLoading(true)
+            setRemoveLoading(true);
         })
         .catch(err => console.log(err));
     }, []);
 
     function removeProject(id) {
-
-        fetch('http://localhost:5000/projects/${id}', {
-        method: 'DELETE',
-        headers: {
-            'Content-Type': 'aplication/json'
-        },
-    }).then(resp => resp.json())
-    .then(data => {
-        setProjects(projects.filter((project) => project.id !== id))
-        setProjectMessage('Projeto removido com sucesso')
-    })
-    .catch(err => console.log(err))
+        fetch(`http://localhost:5000/projects/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        }).then(resp => resp.json())
+        .then(data => {
+            setProjects(projects.filter((project) => project.id !== id));
+            setProjectMessage('Projeto removido com sucesso');
+        })
+        .catch(err => console.log(err));
+    }
 
     return (
         <div className={styles.project_container}>
@@ -77,4 +77,4 @@ function Projects() {
     );
 }
 
-export default Projects
+export default Projects;
