@@ -1,5 +1,17 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "id": "d34a",
+      "category": {
+        "id": "1",
+        "name": "infra"
+      },
+      "budget": "44444444",
+      "name": "cxs",
+      "cost": 0,
+      "services": []
+    }
+  ],
   "categories": [
     {
       "id": "1",

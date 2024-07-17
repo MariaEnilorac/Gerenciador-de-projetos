@@ -8,10 +8,11 @@ function Project () {
     const { id } = useParams()
 
     const [project, setProject] = useState([])
+    const [showProjectForm, setShowProjectForm] = useState(false)
 
     useEffect(() => {
 
-        fetch('http://localhost:5000/projects/${id}', {
+        fetch(`http://localhost:5000/projects/${id}`, {
             method :'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -23,12 +24,16 @@ function Project () {
         })
     }, [id])
 
+    function toggleProjectForm () {
+        setShowProjectForm(!showProjectForm)
+    }
+
     return <>{project.name ? (
         <div>
             <Container customClass="column">
                 <div>
                     <h1>projeto: {project.name}</h1>
-                    <buttom>Editar projeto</buttom>
+                    <buttom onClick={toggleProjectForm}>{!setShowProjectForm ? 'Editar projeto' : 'Fechar'}</buttom>
                 </div>
             </Container>
         </div>
