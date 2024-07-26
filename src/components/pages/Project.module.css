@@ -5,11 +5,12 @@
 .project_details h2,
 .project_details p {
     margin-bottom: 0.5em;
+    color: #faf9f9;
 }
 
 .project_details h1 {
-    background-color: #222;
-    color: #ff8833;
+    background-color: #000000;
+    color: #39FF14;
     padding: 0.4em;
 }
 
@@ -19,7 +20,7 @@
 
 .details_container,
 .service_form_container {
-    border-bottom: 1px solid #7a7a7a;
+    border-bottom: 1px solid #05c649;
     margin-bottom: 1.2em;
     padding-bottom: 1.2em;
     display: flex;
@@ -28,18 +29,20 @@
 }
 
 .btn {
-    background-color: #222;
-    color:#fff;
+    background: linear-gradient(to right, #39FF14, #00BFFF);
+    color:#040404;
     padding: 0.5em 1em;
     text-decoration: none;
     transition: 0.5s;
     cursor: pointer;
     max-height: 40px;
     border: none;
+    border-radius: 2em;
 }
 
 .btn:hover {
-    color: #ffbb33;
+    color: #FFFF00;
+    ;
 }
 
 .project_info {

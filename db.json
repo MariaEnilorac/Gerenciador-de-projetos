@@ -1,17 +1,6 @@
 {
   "projects": [
     {
-      "id": "4c27",
-      "name": "MARIA CAROLINE ADRIANO",
-      "budget": "1",
-      "category": {
-        "id": "1",
-        "name": "infra"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
       "id": "738c",
       "name": "MARIA CAROLINE ADRIANO",
       "budget": "11111111",
@@ -19,8 +8,14 @@
         "id": "1",
         "name": "infra"
       },
-      "cost": 0,
-      "services": []
+      "cost": 1,
+      "services": [
+        {
+          "name": "MARIA CAROLINE ADRIANO",
+          "cost": 1,
+          "id": "5a96a4f9-a814-474c-a7d0-249aafc4c795"
+        }
+      ]
     }
   ],
   "categories": [

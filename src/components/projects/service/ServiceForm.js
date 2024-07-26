@@ -8,7 +8,7 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
 
     function submit(e) {
         e.preventDefault();
-        handleSubmit(service); // Passa apenas o serviço, não o projeto inteiro
+        handleSubmit(service);
     }
 
     function handleChange(e) {
