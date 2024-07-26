@@ -7,22 +7,22 @@ function Footer() {
       <ul className={styles.social_list}>
         <li>
           <a href="https://www.facebook.com/seu_facebook">
-            <FaFacebook />
+            <FaFacebook className={styles.icon} />
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com/seu_instagram">
-            <FaInstagram />
+            <FaInstagram className={styles.icon} />
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/seu_linkedin">
-            <FaLinkedin />
+            <FaLinkedin className={styles.icon} />
           </a>
         </li>
       </ul>
       <p className={styles.copy_right}>
-        <span>Costs</span> &copy; 2024
+        <span>Bear</span> &copy; 2024
       </p>
     </footer>
   )

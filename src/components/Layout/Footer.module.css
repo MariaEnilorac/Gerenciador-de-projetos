@@ -1,35 +1,45 @@
 .footer {
-    background-color: #222;
-    color: #fff;
-    padding: 3em;
-    text-align: center;
-  }
-  
-  .social_list {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-  }
-  
-  .social_list li {
-    margin: 0 1em;
-  }
-  
-  .social_list li:hover {
-    color: #ffbb33;
-  }
-  
-  .social_list svg {
-    font-size: 1.5em;
-    cursor: pointer;
-  }
-  
-  .copy_right {
-    margin-top: 2em;
-  }
-  
-  .copy_right span {
-    font-weight: bold;
-    color: #ffbb33;
-  }
-  
+  background-color: rgb(4, 3, 3);
+  color: #fff;
+  padding: 3em;
+  text-align: center;
+  border: 1px solid #39FF14;
+}
+
+.social_list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.social_list li {
+  margin: 0 1em;
+}
+
+.social_list a {
+  color: #39FF14;
+  text-decoration: none; 
+  font-size: 1.5em;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social_list li:nth-child(1) a:hover {
+  color: #1877F2;
+}
+
+.social_list li:nth-child(2) a:hover {
+  color: #E4405F;
+}
+
+.social_list li:nth-child(3) a:hover {
+  color: #0077B5;
+}
+
+.copy_right {
+  margin-top: 2em;
+}
+
+.copy_right span {
+  font-weight: bold;
+  color: #39FF14;
+}

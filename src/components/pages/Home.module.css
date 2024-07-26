@@ -5,22 +5,24 @@
     align-items: center;
     justify-content: center;
     padding: 4em;
+    background-color: rgb(22, 21, 21);
 }
 
 .home_container h1 {
     font-size: 2.5em;
     margin-bottom: .5em;
+    color: #f5f8f6;
 }
 
 .home_container h1 span {
-    color: #ffbb33;
+    color: #060707;
     padding: 0 .2em;
-    background-color: #222;
+    background: linear-gradient(to right, #39FF14, #00BFFF);
 }
 
 .home_container p {
     margin-bottom: 1.5em;
-    color: #7b7b7b;
+    color: #eff2ee;
 }
 
 .home_container img {

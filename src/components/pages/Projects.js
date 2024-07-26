@@ -25,13 +25,17 @@ function Projects() {
                 'Content-Type': 'application/json',
             },
         })
-        .then(resp => resp.json())
+        .then(resp => {
+            if (!resp.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return resp.json();
+        })
         .then(data => {
-            console.log(data);
             setProjects(data);
             setRemoveLoading(true);
         })
-        .catch(err => console.log(err));
+        .catch(err => console.error('Fetch error:', err));
     }, []);
 
     function removeProject(id) {
@@ -40,12 +44,18 @@ function Projects() {
             headers: {
                 'Content-Type': 'application/json'
             },
-        }).then(resp => resp.json())
+        })
+        .then(resp => {
+            if (!resp.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return resp.json();
+        })
         .then(data => {
             setProjects(projects.filter((project) => project.id !== id));
             setProjectMessage('Projeto removido com sucesso');
         })
-        .catch(err => console.log(err));
+        .catch(err => console.error('Fetch error:', err));
     }
 
     return (
@@ -56,14 +66,13 @@ function Projects() {
             </div>
             {message && <Message type="success" msg={message} />}
             {projectMessage && <Message type="success" msg={projectMessage} />}
-
             <Container customClass="start">
                 {projects.length > 0 && projects.map((project) => (
                     <ProjectsCards 
                         id={project.id} 
                         name={project.name} 
                         budget={project.budget} 
-                        category={project.category.name} 
+                        category={project.category ? project.category.name : 'Sem categoria'} 
                         key={project.id}
                         handleRemove={removeProject}
                     />

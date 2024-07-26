@@ -1,11 +1,11 @@
-import styles from './Container.modules.css'
+import styles from '../Layout/Container.module.css';
 
 function Container(props) {
     return (
       <div className={`${styles.container} ${styles[props.customClass]}`}>
-      {props.children}
-    </div>
+        {props.children}
+      </div>
     )
 }
 
-export default Container
+export default Container;

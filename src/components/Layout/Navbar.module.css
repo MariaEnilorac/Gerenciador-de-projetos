@@ -1,8 +1,9 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #222;
+    background-color: rgb(11, 11, 11);
     padding: 1em;
+    border: 1px solid #39FF14;
   }
   
   .list {
@@ -16,12 +17,14 @@
   }
   
   .item a {
-    color: #fff;
+    color: #39FF14;
     text-decoration: none;
+    box-shadow: 0 0 1px #39FF14;
+    font-weight: bold;
   }
   
   .item a:hover {
-    color: #ffbb33;
+    color: #FFFF00 ;
     text-decoration: none;
   }
   

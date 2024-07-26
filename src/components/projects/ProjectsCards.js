@@ -3,7 +3,6 @@ import { BsPencil, BsFillTrashFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 function ProjectsCards({ id, name, budget, category, handleRemove }) {
-
     const remove = (e) => {
         e.preventDefault();
         handleRemove(id);
@@ -19,10 +18,10 @@ function ProjectsCards({ id, name, budget, category, handleRemove }) {
                 <span className={`${styles[category.toLowerCase()]}`}></span> {category}
             </p>
             <div className={styles.project_card_actions}>
-                <Link to={`/project/${id}`}>
+                <Link to={`/project/${id}`} className={styles.edit_link}>
                     <BsPencil /> Editar
                 </Link>
-                <button onClick={remove}>
+                <button onClick={remove} className={styles.delete_button}>
                     <BsFillTrashFill /> Excluir
                 </button>
             </div>
