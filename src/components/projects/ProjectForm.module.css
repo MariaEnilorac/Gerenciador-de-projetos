@@ -1,4 +1,9 @@
 .form {
+    color: rgb(0, 6, 12);
+    margin: 1em;
+}
+
+.form_services {
     color: aliceblue;
-    width: 50%;
+    width: 48%;
 }

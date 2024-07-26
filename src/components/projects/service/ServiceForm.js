@@ -16,7 +16,7 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
     }
 
     return (
-        <form onSubmit={submit} className={styles.form}>
+        <form onSubmit={submit} className={styles.form_services}>
             <Input 
                 type="text" 
                 text="Nome do serviço" 
