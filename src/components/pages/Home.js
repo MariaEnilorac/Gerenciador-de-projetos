@@ -1,5 +1,5 @@
 import styles from './Home.module.css'
-import savings from '../../img/savings.svg'
+import savings from '../../img/Bear.gif'
 import { Link } from 'react-router-dom'
 import LinkButton from '../Layout/LinkButton'
 

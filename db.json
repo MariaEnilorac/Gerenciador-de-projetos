@@ -1,19 +1,20 @@
 {
   "projects": [
     {
-      "id": "b0bb",
-      "name": "MARIA CAROLINE ADRIANO",
+      "id": "1664",
+      "name": "Site WEBJAC",
+      "budget": "1500.00",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "budget": "44",
-      "cost": 1,
+      "cost": null,
       "services": [
         {
-          "name": "MARIA CAROLINE ADRIANO",
-          "cost": 1,
-          "id": "de2fd0ab-c42b-4495-ba45-5222af6168e9"
+          "name": "Programador Backend node.js",
+          "cost": 1000,
+          "description": "Desenvolvimento do Backend do site",
+          "id": "56610aef-f2b6-4e66-afca-e43992b5ac27"
         }
       ]
     }
