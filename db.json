@@ -3,12 +3,12 @@
     {
       "id": "1664",
       "name": "Site WEBJAC",
-      "budget": "1500.00",
+      "budget": "3000.00",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": null,
+      "cost": 0,
       "services": [
         {
           "name": "Programador Backend node.js",
@@ -17,6 +17,17 @@
           "id": "56610aef-f2b6-4e66-afca-e43992b5ac27"
         }
       ]
+    },
+    {
+      "id": "3337",
+      "name": "Site",
+      "budget": "1000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": []
     }
   ],
   "categories": [
