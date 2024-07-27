@@ -65,12 +65,10 @@ function Project() {
         setMessage('');
         setType('');
 
-        // Garantir que o custo do serviço seja um número válido
         service.cost = parseFloat(service.cost);
         const currentCost = parseFloat(project.cost) || 0;
         const newCost = currentCost + service.cost;
 
-        // Garantir que o orçamento seja um número válido
         const budget = parseFloat(project.budget) || 0;
 
         console.log("Novo custo:", newCost);
